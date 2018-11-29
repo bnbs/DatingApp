@@ -1,10 +1,10 @@
 import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
-import { User } from 'src/app/models/user';
+import { User } from '../../models/user';
 import { ActivatedRoute } from '@angular/router';
 import { AlertifyService } from '../../services/alertify.service';
 import { NgForm } from '@angular/forms';
-import { UserService } from 'src/app/services/user.service';
-import { AuthService } from 'src/app/services/auth.service';
+import { UserService } from '../../services/user.service';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-member-edit',
