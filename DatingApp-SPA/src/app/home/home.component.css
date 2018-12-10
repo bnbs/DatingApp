@@ -1,0 +1,26 @@
+.img-background {
+  background-image: url("../../assets/couples.jpg");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 93vh;
+  width: 100%;
+  position: relative;
+}
+
+.register-panel {
+  position: absolute;
+  right: 0%;
+  bottom: 50%;
+}
+
+@media (max-width: 100rem) {
+  .img-background {
+    background-position: bottom center;
+  }
+  .register-panel {
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+  }
+}
