@@ -1,16 +1,15 @@
 <div class="img-background">
-  <div class="container mt-5 register-panel">
-    <div *ngIf="!registerMode" style="text-align: center">
+  <div class="container mt-5 register-text">
+    <div *ngIf="!loggedIn() && !registerMode" style="text-align: center">
       <h1 class="font-weight-bold">Find your match</h1>
       <p class="lead font-weight-bold">Come on in to view your matches... All you need to do is sign up!</p>
       <button class="btn btn-primary btn-lg mr-2 font-weight-bold" (click)="registerToggle()">Register</button>
     </div>
-
-    <div *ngIf="registerMode" class="container">
-      <div class="row justify-content-center">
-        <div class="col-4">
-          <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
-        </div>
+  </div>
+  <div *ngIf="registerMode" class="container register-form">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
       </div>
     </div>
   </div>

@@ -12,7 +12,7 @@ export class NavComponent implements OnInit {
 
   model: any = {};
   photoUrl: string;
-  isCollapsed = false;
+  isCollapsed = true;
   smallScreens: boolean;
 
   @HostListener('window:resize', ['$event'])
@@ -33,6 +33,7 @@ export class NavComponent implements OnInit {
     }, error => {
       this.alertify.error(error);
     }, () => {
+      this.isCollapsed = true;
       this.router.navigate(['/members']);
     });
   }

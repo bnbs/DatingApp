@@ -8,17 +8,24 @@
   position: relative;
 }
 
-.register-panel {
+.register-text {
   position: absolute;
   right: 0%;
   bottom: 50%;
+}
+
+.register-form {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -20%);
 }
 
 @media (max-width: 100rem) {
   .img-background {
     background-position: bottom center;
   }
-  .register-panel {
+  .register-text {
     left: 50%;
     top: 10%;
     transform: translate(-50%, -10%);
