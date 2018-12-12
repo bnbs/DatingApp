@@ -1,5 +1,13 @@
+.dropdown {
+    order: 10;
+}
+
 .dropdown-toggle, .dropdown-item {
     cursor: pointer;
+}
+
+.navbar-toggler:focus {
+    outline: none;
 }
 
 img {
@@ -13,8 +21,14 @@ img {
 }
 
 @media (max-width: 48rem) {
+    .dropdown {
+        order: 0;
+    }
     #appLogo, #loginForm {
         margin: auto;
+    }
+    .navbar li:first-of-type {
+        padding-top: 1.5rem; 
     }
 }
 

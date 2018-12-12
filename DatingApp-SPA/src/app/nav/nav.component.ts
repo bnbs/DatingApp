@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { AlertifyService } from '../services/alertify.service';
 import { Router } from '@angular/router';
@@ -12,11 +12,19 @@ export class NavComponent implements OnInit {
 
   model: any = {};
   photoUrl: string;
+  isCollapsed = false;
+  smallScreens: boolean;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.smallScreens = window.innerWidth < 576 ? true : false;
+  }
 
   constructor(public authService: AuthService, private alertify: AlertifyService, private router: Router) { }
 
   ngOnInit() {
     this.authService.currentPhotoUrl.subscribe(photoUrl => this.photoUrl = photoUrl);
+    this.smallScreens = window.innerWidth < 576 ? true : false;
   }
 
   login() {
