@@ -7,7 +7,6 @@
 @import "../node_modules//ngx-bootstrap/datepicker/bs-datepicker.css";
 
 .tab-panel {
-  border: 1px solid #ddd;
   padding: 10px;
   border-radius: 4px;
 }
@@ -42,6 +41,7 @@
 .member-tabset > .nav-tabs > li.active > a {
   border: 0 !important;
   color: #333333;
+  background-color: white;
 }
 
 .member-tabset > .nav-tabs > li.active > a > i {
