@@ -13,3 +13,10 @@
     background-color: #fff;
     border-top: none;
 }
+
+@media (min-width: 48rem) {
+    .text-position {
+        margin: 0 0 16px !important;
+        padding: 0 15px; 
+    }
+}

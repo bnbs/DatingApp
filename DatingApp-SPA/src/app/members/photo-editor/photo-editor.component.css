@@ -16,10 +16,6 @@ input[type=file] {
   opacity: 0.2;
 }
 
-.img-wrapper {
-  position: relative;
-}
-
 .img-text {
   position: absolute;
   bottom: 30%;

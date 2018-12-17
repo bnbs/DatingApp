@@ -19,6 +19,10 @@
   width: 50px;
 }
 
+.message-padding {
+  padding-left: 56px;
+}
+
 .card-body {
   overflow-y: scroll;
   height: 400px;
