@@ -6,6 +6,24 @@ table {
   max-height: 50px;
 }
 
+table th {
+  padding: 4px;
+  vertical-align: middle;
+}
+
 td {
   vertical-align: middle;
+}
+
+th, tr td {
+  text-align: center;
+}
+
+tr div {
+  display: inline-block;
+}
+
+tr > td {
+  max-width: 100px;
+  word-wrap: break-word;
 }
