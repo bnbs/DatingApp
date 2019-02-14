@@ -7,7 +7,7 @@
 
     <div class="d-flex flex-row justify-content-center align-items-center" [routerLink]="['/home']" id="appLogo" *ngIf="!smallScreens || (smallScreens && !loggedIn())">
       <i class="fa fa-heart fa-2x mx-2 text-white"></i>
-      <a class="navbar-brand font-weight-bold" href="#">Dating App</a>
+      <a class="navbar-brand font-weight-bold" [routerLink]="['/home']">Dating App</a>
     </div>
 
     <form *ngIf="!loggedIn()" #loginForm="ngForm" class="form-inline my-2 my-lg-0 order-2" (ngSubmit)="login()" id="loginForm">
